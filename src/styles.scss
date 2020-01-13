@@ -15,6 +15,37 @@ body{
     position: sticky;
     top:0;
 }
+:hover{
+  >.tooltip{
+    display:inline-block;
+  }
+}
+.tooltip{
+  display:none;
+  padding:0.25rem;
+  background-color:rgb(39, 39, 39);
+  color: rgb(245, 245, 245);
+  border-radius: 0.2rem;
+  justify-content:center;
+  position:absolute;
+  font-size:1rem;
+  top: calc(100% + 0.75rem);
+  left:50%;
+  transform: translate(-50%);
+  &:before {
+    content: '';
+    left:50%;
+    top:-1rem;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-color: transparent transparent rgb(39, 39, 39) transparent;  
+    display: inline-block;
+    position:absolute;
+  }
+}
+
+
 
 /* TEXT-STYLING */
 * {
@@ -67,6 +98,7 @@ img{
     flex-direction: row;
     padding:0.75rem;
     .icon-link{
+      position:relative;
         color: rgb(17, 17, 17);
         font-size:3rem;
         margin:0.75rem;
