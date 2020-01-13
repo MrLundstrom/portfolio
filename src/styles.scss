@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+/* CSS-VARIABLES */
+:root{
+    --main: rgb(209, 61, 61);
+    --background: rgb(245, 245, 245);
+}
+/* RESET & GENERAL */
+* {
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: var(--background);
+}
+.navbarSticky{
+    position: sticky;
+    top:0;
+}
+
+/* TEXT-STYLING */
+* {
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+  }
+  p {
+    font-weight: 400;
+    margin: 0.75rem;
+    line-height: 1.4;
+    &.quote {
+      font-size:2rem;
+      &:before {
+        content: "\201C";
+      }
+      &:after {
+        content: "\201D";
+      }
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    margin: 0.75rem;
+    &.border {
+      padding: 0.75rem;
+      border-left: 1px solid #cd3131;
+      margin: 0;
+    }
+  }
+/* IMAGE-STYLING */
+.image{
+    .is-rounded{
+        border-radius: 50%;
+        border: 0.25rem solid lightgray;
+        background-color: lightgray;
+    }
+}
+.is-128x128{
+    width:192px;
+    height:192px;
+}
+img{
+    width:100%;
+    height:100%;
+}
+/* MENU-STYLING */
+.menu{
+    display:flex;
+    flex-direction: row;
+    padding:0.75rem;
+    .icon-link{
+        color: rgb(17, 17, 17);
+        font-size:3rem;
+        margin:0.75rem;
+        &:hover{
+            cursor:pointer;
+            color: rgb(39, 39, 39);
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.splash{
+    max-width:100%;
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100 - 4rem);
+    max-height: calc(100%-4rem);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: inset 0px -5px 15px -10px #000;
+    background: linear-gradient(
+      336deg,
+      rgba(121, 121, 121, 0.06) 0%,
+      rgba(121, 121, 121, 0.06) 44%,
+      rgba(125, 125, 125, 0.06) 44%,
+      rgba(125, 125, 125, 0.06) 100%
+    ),
+    linear-gradient(
+      110deg,
+      rgba(15, 15, 15, 0.04) 0%,
+      rgba(15, 15, 15, 0.04) 24%,
+      rgba(204, 204, 204, 0.06) 24%,
+      rgba(204, 204, 204, 0.08) 100%
+    ),
+    linear-gradient(
+      174deg,
+      rgba(151, 151, 151, 0.02) 0%,
+      rgba(151, 151, 151, 0.02) 87%,
+      rgba(226, 226, 226, 0.04) 87%,
+      rgba(226, 226, 226, 0.04) 100%
+    ),
+    linear-gradient(
+      224deg,
+      rgba(4, 4, 4, 0.02) 0%,
+      rgba(4, 4, 4, 0.02) 30%,
+      rgba(232, 232, 232, 0.05) 30%,
+      rgba(232, 232, 232, 0.04) 100%
+    ),
+    linear-gradient(
+      5deg,
+      rgba(4, 4, 4, 0.02) 0%,
+      rgba(4, 4, 4, 0.02) 30%,
+      rgba(3, 3, 3, 0.05) 30%,
+      rgba(6, 2, 3, 0.04) 100%
+    );
+    background-color: var(--main);
+}
+.splash-container{
+    align-items:center;
+    display:flex;
+    flex-direction: column;
+}

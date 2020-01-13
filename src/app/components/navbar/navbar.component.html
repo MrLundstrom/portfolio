@@ -1,0 +1,16 @@
+<div class="navbar">
+    <div class="content">
+        <a class="navbar-item">Mr.Lundstrom</a>
+        <div class="navbar-items" [ngClass]="{'is-active': showMenu}">
+            <a class="navbar-item">About me</a>
+            <a class="navbar-item">Projects</a>
+            <a class="navbar-item">Skills</a>
+            <a class="navbar-item">Contact</a>
+        </div>
+        <a class="navbar-toggle" [ngClass]="{'is-active': showMenu}" (click)="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+    </div>
+</div>
