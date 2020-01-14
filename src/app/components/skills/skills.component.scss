@@ -1,0 +1,30 @@
+.skill-card{
+    width:100%;
+    padding:1.5rem;
+    font-size:1.5rem;
+    >.icon{
+        margin-right:0.75rem;
+    }
+    &.angular{
+        background-color:red;   
+    }
+    &.html{
+        background-color: black;
+        color:white;
+    }
+    &.js{
+        background-color: yellow;
+    }
+    &.sass{
+        background-color: pink;
+        color:black;
+    }
+    &.css{
+        background-color: darkblue;
+        color:white;
+    }
+    &.fire{
+        background-color: lightblue;
+        color:black;
+    }
+}

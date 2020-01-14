@@ -1,23 +1,31 @@
-<div class="splash">
-    <div class="splash-container">
-        <div class="image is-128x128">
-            <img class="is-rounded" alt="profilePicture" src="../../../assets/profilePic.jpg">
-        </div>
-        <h1>Erik Lundström</h1>
-        <h3>Student, developer & foodie</h3>
-        <div class="menu">
-            <a class="icon-link" target="_" href="https://www.linkedin.com/in/mrLundstrom">
-                <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
-                <div class="tooltip">
-                    LinkedIn
-                </div>
-            </a>
-            <a class="icon-link" target="_" href="https://www.github.com/mrLundstrom">
-                <fa-icon [icon]="['fab', 'github']"></fa-icon>
-                <div class="tooltip">
-                    Github
-                </div>
-            </a>
+<div class="page">
+    <div class="splash">
+        <div class="splash-container">
+            <div class="image is-192x192 is-rounded">
+                <img alt="profilePicture" src="assets/profilePic.jpg">
+            </div>
+            <h1>Erik Lundström</h1>
+            <h3>Student, developer & foodie</h3>
+            <div class="menu">
+                <a class="icon-link">
+                    <fa-icon [icon]="['fab', 'linkedin']" [fixedWidth]="true"></fa-icon>
+                    <div class="tooltip">
+                        LinkedIn
+                    </div>
+                </a>
+                <a class="icon-link">
+                    <fa-icon [icon]="['fab', 'github']" [fixedWidth]="true"></fa-icon>
+                    <div class="tooltip">
+                        Github
+                    </div>
+                </a>
+                <a class="icon-link">
+                    <fa-icon [icon]="['fab', 'behance']" [fixedWidth]="true"></fa-icon>
+                    <div class="tooltip">
+                        Behance
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

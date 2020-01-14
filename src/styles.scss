@@ -11,6 +11,42 @@
 body{
     background-color: var(--background);
 }
+.page{
+  min-height: calc(var(--vh, 1vh) * 100 - 4rem);
+  height: calc(var(--vh, 1vh) * 100 - 4rem);
+  max-width:100%;
+  width:100vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+max-width:960px;
+width:960px;
+align-self:center;
+}
+.columns{
+  align-self:center;
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .column{
+    display:flex;
+    flex:auto;
+    @for $i from 1 through 12 {
+      &.is-#{$i} {
+        width: (100% * ($i / 12));
+        @media screen and (max-width: 767px) {
+          width:100%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
 .navbarSticky{
     position: sticky;
     top:0;
@@ -78,25 +114,26 @@ body{
   }
 /* IMAGE-STYLING */
 .image{
-    .is-rounded{
+    &.is-rounded{
         border-radius: 50%;
         border: 0.25rem solid lightgray;
         background-color: lightgray;
+        overflow:hidden;
+        margin:0.75rem;
     }
-}
-.is-128x128{
-    width:192px;
-    height:192px;
-}
-img{
-    width:100%;
-    height:100%;
+    &.is-192x192{
+      width:192px;
+      height:192px;
+  }
+  >img{
+      width:100%;
+      height:100%;
+  }
 }
 /* MENU-STYLING */
 .menu{
     display:flex;
     flex-direction: row;
-    padding:0.75rem;
     .icon-link{
       position:relative;
         color: rgb(17, 17, 17);
