@@ -1,11 +1,13 @@
 <div class="navbar">
     <div class="content">
-        <a class="navbar-item">Mr.Lundstrom</a>
+        <a class="navbar-item">Mr Lundstrom</a>
         <div class="navbar-items" [ngClass]="{'is-active': showMenu}">
-            <a class="navbar-item">About me</a>
-            <a class="navbar-item">Projects</a>
             <a class="navbar-item">Skills</a>
-            <a class="navbar-item">Contact</a>
+            <a class="navbar-item">Projects</a>
+            <a class="navbar-item" (click)="toggleMode()">
+                <fa-icon *ngIf="day" icon="sun" [fixedWidth]="true"></fa-icon>
+                <fa-icon *ngIf="!day" icon="moon" [fixedWidth]="true"></fa-icon>
+            </a>
         </div>
         <a class="navbar-toggle" [ngClass]="{'is-active': showMenu}" (click)="toggleMenu()">
             <span class="line"></span>

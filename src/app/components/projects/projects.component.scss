@@ -1,0 +1,22 @@
+.project-card{
+    position:relative;
+    width:100%;
+    height:100%;
+    color: rgb(25,25,25);
+    opacity:90%;
+    &.simul{
+        background-color:pink;
+    }
+    &.freda{
+        background-color:rgb(255, 255, 25);
+    }
+    &.archipelago{
+        background-color:rgb(60, 60, 226);
+    }
+    &.transforms{
+        background-color:rgb(255, 29, 29);
+    }
+    .card-content{
+        padding:1.5rem;
+    }
+}

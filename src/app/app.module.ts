@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faFire } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub, faAngular, faBehance, faHtml5, faJs, faSass, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import { faFire, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub, faAngular, faBehance, faHtml5, faJs, faSass, faCss3Alt, faGitAlt, faJava } from '@fortawesome/free-brands-svg-icons';
 import { } from '@fortawesome/free-regular-svg-icons';
 
 
@@ -34,7 +34,8 @@ export class AppModule {
   constructor(library: FaIconLibrary) {
     // Add an icon to the library for convenient access in other components
     library.addIcons(
-      faLinkedin, faGithub, faAngular, faBehance, faHtml5, faJs, faSass, faFire, faCss3Alt
+      faLinkedin, faGithub, faAngular, faBehance, faHtml5, faJs, faSass, faFire, faCss3Alt,
+      faGitAlt, faJava, faSun, faMoon
     );
   }
 }

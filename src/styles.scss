@@ -1,7 +1,9 @@
 /* CSS-VARIABLES */
 :root{
     --main: rgb(209, 61, 61);
-    --background: rgb(245, 245, 245);
+    --bg: rgb(240, 240, 240);
+    --text: rgb(25, 25, 25);
+
 }
 /* RESET & GENERAL */
 * {
@@ -9,16 +11,21 @@
     margin: 0;
 }
 body{
-    background-color: var(--background);
+    background-color: var(--bg);
+    color: var(--text);
+    @media (prefers-color-scheme: dark) {
+      --bg: rgb(25, 25, 25);
+    --text: rgb(240, 240, 240);
+    }
 }
 .page{
-  min-height: calc(var(--vh, 1vh) * 100 - 4rem);
-  height: calc(var(--vh, 1vh) * 100 - 4rem);
+  min-height: calc(var(--vh, vh) * 100 - 4rem);
   max-width:100%;
   width:100vw;
   display:flex;
   align-items: center;
   justify-content: center;
+  padding:1.5rem 0  1.5rem 0;
 }
 .container{
 max-width:960px;
@@ -37,6 +44,7 @@ align-self:center;
     @for $i from 1 through 12 {
       &.is-#{$i} {
         width: (100% * ($i / 12));
+        flex:none;
         @media screen and (max-width: 767px) {
           width:100%;
         }
@@ -50,6 +58,7 @@ align-self:center;
 .navbarSticky{
     position: sticky;
     top:0;
+    z-index: 1;
 }
 :hover{
   >.tooltip{
@@ -110,7 +119,6 @@ align-self:center;
   h6 {
     font-weight: 500;
     margin: 0.75rem;
-    color: rgb(27, 27, 27);
   }
 /* IMAGE-STYLING */
 .image{
