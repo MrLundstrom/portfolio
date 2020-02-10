@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollServiceService } from 'src/app/services/scroll-service.service';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scrollService: ScrollServiceService) { }
 
   ngOnInit() {
+    this.scrollService.projects.subscribe(() => this.scrollTo());
+  }
+  scrollTo(){
+    document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
   }
 
 }

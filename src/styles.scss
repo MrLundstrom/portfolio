@@ -1,9 +1,9 @@
+@import 'reset.scss';
 /* CSS-VARIABLES */
 :root{
-    --main: rgb(209, 61, 61);
-    --bg: rgb(240, 240, 240);
-    --text: rgb(25, 25, 25);
-
+    --bg: rgb(230, 230, 230);
+    --text: rgb(30, 30, 30);
+    --main: rgba(209, 61, 61,0.9);
 }
 /* RESET & GENERAL */
 * {
@@ -13,19 +13,16 @@
 body{
     background-color: var(--bg);
     color: var(--text);
-    @media (prefers-color-scheme: dark) {
-      --bg: rgb(25, 25, 25);
-    --text: rgb(240, 240, 240);
-    }
+    transition: 0.5s;
 }
 .page{
-  min-height: calc(var(--vh, vh) * 100 - 4rem);
+  padding-top:4rem !important;
+  padding-bottom:4rem !important;
   max-width:100%;
   width:100vw;
   display:flex;
   align-items: center;
   justify-content: center;
-  padding:1.5rem 0  1.5rem 0;
 }
 .container{
 max-width:960px;
@@ -55,11 +52,12 @@ align-self:center;
     flex-direction: column;
   }
 }
-.navbarSticky{
-    position: sticky;
+.navbarFixed{
+    position: fixed;
     top:0;
     z-index: 1;
 }
+
 :hover{
   >.tooltip{
     display:inline-block;
@@ -68,8 +66,8 @@ align-self:center;
 .tooltip{
   display:none;
   padding:0.25rem;
-  background-color:rgb(39, 39, 39);
-  color: rgb(245, 245, 245);
+  background-color:var(--text);
+  color: var(--bg);
   border-radius: 0.2rem;
   justify-content:center;
   position:absolute;
@@ -84,7 +82,7 @@ align-self:center;
     transform: translateX(-50%);
     border-style: solid;
     border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
-    border-color: transparent transparent rgb(39, 39, 39) transparent;  
+    border-color: transparent transparent var(--text) transparent;  
     display: inline-block;
     position:absolute;
   }
@@ -143,13 +141,32 @@ align-self:center;
     display:flex;
     flex-direction: row;
     .icon-link{
+      transition: color 0.5s;
       position:relative;
-        color: rgb(17, 17, 17);
-        font-size:3rem;
+        color: var(--text);
+        font-size:2.5rem;
         margin:0.75rem;
         &:hover{
             cursor:pointer;
-            color: rgb(39, 39, 39);
+            color: var(--text);
         }
     }
+}
+.buttons{
+  padding: 0 0.75rem 0 0.75rem;
+}
+.button{
+  padding:0.25rem;
+  font-size:75%;
+  margin:calc(0.75rem / 2);
+  border-radius: 0.25rem;
+  background-color: var(--text);
+  color: var(--bg);
+  border:none;
+  transition:0.5s;
+  border:1px solid var(--text);
+  &:hover{
+    cursor:pointer;
+    opacity: 85%;
+  }
 }

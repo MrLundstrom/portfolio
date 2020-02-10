@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollServiceService } from 'src/app/services/scroll-service.service';
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scrollService: ScrollServiceService) { }
 
   ngOnInit() {
+    this.scrollService.skills.subscribe(() => this.scrollTo());
+  }
+  scrollTo(){
+    document.getElementById('skills').scrollIntoView({behavior: 'smooth'});
   }
 
 }

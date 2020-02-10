@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollServiceService } from 'src/app/services/scroll-service.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,24 +11,27 @@ export class NavbarComponent implements OnInit {
   showMenu = false;
   day = true;
 
-  constructor() { }
+  constructor(private scrollService: ScrollServiceService) { }
 
   ngOnInit() {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      this.toggleMode()
+    }
   }
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView({ behavior: "smooth" });
+  scroll(name: string) {
+    this.scrollService.scrollTo(name);
   }
-  toggleMenu(){
+  toggleMenu() {
     this.showMenu = !this.showMenu;
   }
-  toggleMode(){
-    if (this.day){
-      this.root.style.setProperty('--text', 'rgb(240,240,240)');
-      this.root.style.setProperty('--bg', 'rgb(25,25,25)');
-    } else{
-      this.root.style.setProperty('--bg', 'rgb(240,240,240)');
-      this.root.style.setProperty('--text', 'rgb(25,25,25)');
+  toggleMode() {
+    if (this.day) {
+      this.root.style.setProperty('--text', 'rgb(230,230,230)');
+      this.root.style.setProperty('--bg', 'rgb(30,30,30)');
+    } else {
+      this.root.style.setProperty('--bg', 'rgb(230,230,230)');
+      this.root.style.setProperty('--text', 'rgb(30,30,30)');
     }
     this.day = !this.day;
   }
