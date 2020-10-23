@@ -1,28 +1,32 @@
-.project-card{
-    position:relative;
-    width:100%;
-    height:100%;
-    opacity:90%;
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
     background-color: #8e8e8e12;
 
-    &.simul h2{
-        padding-bottom:0.25rem;
-        border-bottom: 1px solid #e06767;
+    &.simul h2 {
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid #750c64;
     }
-    &.spex h2{
-        padding-bottom:0.25rem;
+
+    &.portfolio h2 {
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid #65fc47;
+    }
+
+    &.spex h2 {
+        padding-bottom: 0.25rem;
         border-bottom: 1px solid #fcd947;
     }
-    &.archipelago h2{
-        padding-bottom:0.25rem;
-        border-bottom: 1px solid rgb(67, 85, 250);
-    }
-    &.transforms h2{
-        padding-bottom:0.25rem;
+
+    &.dotClock h2 {
+        padding-bottom: 0.25rem;
         border-bottom: 1px solid rgb(255, 31, 31);
     }
-    .card-content{
-        padding:1.5rem;
-        height:100%;
+
+    .card-content {
+        padding: 1.5rem;
+        height: 100%;
     }
 }

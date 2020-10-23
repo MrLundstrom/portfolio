@@ -2,8 +2,9 @@
     <div class="content">
         <a class="navbar-item" (click)="scroll('splash')">Mr Lundstrom</a>
         <div class="navbar-items" [ngClass]="{'is-active': showMenu}">
-            <a class="navbar-item" (click)="scroll('skills')">Skills</a>
-            <a class="navbar-item" (click)="scroll('projects')">Projects</a>
+            <a class="navbar-item" (click)="menuClick('about')">About</a>
+            <a class="navbar-item" (click)="menuClick('skills')">Skills</a>
+            <a class="navbar-item" (click)="menuClick('projects')">Projects</a>
             <a class="navbar-item" (click)="toggleMode()">
                 <fa-icon *ngIf="day" icon="sun" [fixedWidth]="true"></fa-icon>
                 <fa-icon *ngIf="!day" icon="moon" [fixedWidth]="true"></fa-icon>

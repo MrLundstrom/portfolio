@@ -18,6 +18,10 @@ export class NavbarComponent implements OnInit {
       this.toggleMode()
     }
   }
+  menuClick(name: string) {
+    this.toggleMenu();
+    this.scroll(name);
+  }
 
   scroll(name: string) {
     this.scrollService.scrollTo(name);

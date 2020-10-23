@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +8,7 @@ export class ScrollServiceService {
   public skills = new Subject()
   public projects = new Subject();
   public splash = new Subject();
+  public about = new Subject();
 
   constructor() { }
 
@@ -16,8 +17,10 @@ export class ScrollServiceService {
       this.skills.next();
     } else if (page == 'projects') {
       this.projects.next();
-    } else {
+    } else if (page == 'splash') {
       this.splash.next();
+    } else {
+      this.about.next();
     }
   }
 }

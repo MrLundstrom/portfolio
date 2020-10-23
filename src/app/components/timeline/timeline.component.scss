@@ -1,0 +1,27 @@
+.timeline-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+    .button{
+        display:flex;
+        flex:1;
+    }
+    .fill{
+        display:flex;
+        flex:1;
+    }
+}
+.event{
+    flex-direction: column;
+    align-items: center;
+    width:33%;
+}
+.button{
+    &.rounded{
+        border-radius: 100%;
+    }
+} 
