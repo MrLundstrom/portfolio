@@ -1,0 +1,10 @@
+<div class="page" id="repositories">
+    <div class="container">
+        <h1>Public Repositories</h1>
+        <div class="columns">
+            <div class="column is-6" *ngFor="let project of projects | async">
+                <app-repository-card class="fullwidth" [repo]="project"></app-repository-card>
+            </div>
+        </div>
+    </div>
+</div>

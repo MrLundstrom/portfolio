@@ -2,7 +2,43 @@
     <div class="container">
         <h1>Projects</h1>
         <div class="columns">
-            <div class="column is-6">
+            <div class="column is-12">
+                <div class="project-card continuous">
+                    <div class="card-content">
+                        <h2>Continuous TD -
+                            <fa-icon class="icon" [icon]="['fab', 'unity']" [fixedWidth]="true"></fa-icon>
+                        </h2>
+                        <div class="buttons">
+                            <a class="button" target="_blank"
+                                href="https://play.google.com/store/apps/details?id=com.game.ContinuumTD">
+                                <fa-icon class="icon" [icon]="['fab', 'google-play']" [fixedWidth]="true"></fa-icon>
+                                Google Play
+                            </a>
+                            <a class="button" target="_blank" href="https://testflight.apple.com/join/14xbSfRm">
+                                <fa-icon class="icon" [icon]="['fab', 'app-store-ios']" [fixedWidth]="true"></fa-icon>
+                                Appstore
+                            </a>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <div class="cover_photo"></div>
+                            </div>
+                            <div class="column is-6">
+                                <p>
+                                    A semi-idle Tower Defence game for Android and IOS. It features 10 different towers
+                                    with 3 upgrades each, giving (almost) endless options to build your defence.
+                                    It also features 6 different game-modes, 28 permanent upgrades, leaderboads and
+                                    randomly generated levels.<br><br>The game is a freemium game, which means it's free to download, but you can buy a
+                                    few things with IAP or watch ads to gain rewards.<br><br>It's currently in beta testing, with a proper release planned for the end of the
+                                    summer.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column is-12">
                 <div class="project-card simul">
                     <div class="card-content">
                         <h2>Simul/Side! -
@@ -15,18 +51,27 @@
                             <a class="button" target="_blank" href="https://collaborate-63183.web.app/">Live demo
                             </a>
                         </div>
-                        <p>
-                            A platform that enables its users to create, find and join projects. It supports
-                            authentication with your Google account and with your email & password. It is hosted with
-                            firebase hosting. If you would like to try it, there is a dummy account to see what its all
-                            about:
-                            <br><b>email</b>: dummy@simulapp.com
-                            <br><b>password</b>: 123456
-                        </p>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <div class="cover_photo"></div>
+                            </div>
+                            <div class="column is-6">
+                                <p>
+                                    A platform that enables its users to create, find and join projects. It supports
+                                    authentication with your Google account and with your email & password. It is hosted
+                                    with firebase hosting. There is a test-account to see how the platform works. It's not
+                                    finnished as it was outside the scope of the course.
+                                    It does however support account creation, editing of your account, search for projects, ability to create new projcets, 
+                                    chat function with instant messaging, image uploads and more!
+                                    <br><b>email</b>: dummy@simulapp.com
+                                    <br><b>password</b>: 123456
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="column is-6">
+            <div class="column is-12">
                 <div class="project-card dotClock">
                     <div class="card-content">
                         <h2>DotClock -
@@ -44,14 +89,22 @@
                             </a>
 
                         </div>
-                        <p>An experimental wallpaper-website, showing the current time with a pattern of dots. Is
-                            available for download
-                            and usage in the Steam workshop, where it currently has over 2000 subscribers and a 88%
-                            rating.</p>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <div class="cover_photo"></div>
+                            </div>
+                            <div class="column is-6">
+                                <p>An experimental wallpaper-website, showing the current time with a pattern of dots. It features the ability to change size, color and location of the clock as well as
+                                    adding background colors and switching between 12 and 24HR formats.
+                                    It is available for download and usage in the Steam workshop in the application Wallpaper Engine, where it currently has over 3500 subscribers and
+                                    around 90% rating.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="column is-6">
+            <div class="column is-12">
                 <div class="project-card transforms">
                     <div class="card-content">
                         <h2>Transforms -
@@ -60,19 +113,29 @@
                             <fa-icon class="icon" [icon]="['fab', 'css3-alt']" [fixedWidth]="true"></fa-icon>
                         </h2>
                         <div class="buttons">
-                            <a class="button" target="_blank" href="https://mrlundstrom.github.io/transforms">Live demo
+                            <a class="button" target="_blank" href="https://mrlundstrom.github.io/transforms">Live
+                                demo
                             </a>
                             <a class="button" target="_blank" href="https://github.com/MrLundstrom/transforms">Github
                                 repository
                             </a>
                         </div>
-                        <p>A small experiment with CSS-transforms to create a three-dimensional world
-                            without other tools. Uses some javascript to change the perspective.
-                        </p>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <div class="cover_photo"></div>
+                            </div>
+                            <div class="column is-6">
+                                <p>A small experiment with CSS-transforms to create a three-dimensional world
+                                    without other tools. It uses css transforms to make the buildings, and it
+                                    uses some javascript to change the perspective.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="column is-6">
+            <div class="column is-12">
                 <div class="project-card spex">
                     <div class="card-content">
                         <h2>VG Spex -
@@ -85,25 +148,17 @@
                             <a class="button" target="_blank" href="https://vg-spex.web.app">Live website
                             </a>
                         </div>
-                        <p>A webapp to easily store & book food in Västgöta Nations inventory.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-12">
-                <div class="project-card continuous">
-                    <div class="card-content">
-                        <h2>Continuous TD -
-                            <fa-icon class="icon" [icon]="['fab', 'unity']" [fixedWidth]="true"></fa-icon>
-                        </h2>
-                        <div class="buttons">
-                            <a class="button" target="_blank" href="https://play.google.com/store/apps/details?id=com.game.ContinuumTD"><fa-icon class="icon" [icon]="['fab', 'google-play']" [fixedWidth]="true"></fa-icon>Google Play
-                            </a>
-                            <a class="button" target="_blank" href="https://testflight.apple.com/join/14xbSfRm"><fa-icon class="icon" [icon]="['fab', 'app-store-ios']" [fixedWidth]="true"></fa-icon>Appstore
-                            </a>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <div class="cover_photo"></div>
+                            </div>
+                            <div class="column is-6">
+                                <p>A webapp to easily store & book food in Västgöta Nations inventory.
+                                    Currently features the ability to add and delete items in inventory, book part of or whole items in inventory, 
+                                    and to set expiration dates that will warn once inventory goes past it's expiration date and to see booked items.
+                                </p>
+                            </div>
                         </div>
-                        <p>(BETA) A mobile game made in unity that supports rewarded ads. The game itself is an incremental Tower Defence, where you try to reach the final wave by
-                            prestiging and upgrading your towers more and more! It has 7+ towers, 20+ upgrades, 6 different creeps, and 2 game modes, including randomly generated levels.
-                        </p>
                     </div>
                 </div>
             </div>

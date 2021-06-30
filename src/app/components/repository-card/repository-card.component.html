@@ -1,0 +1,13 @@
+    <div class="project-card repo">
+        <div class="card-content">
+            <h2>{{repo.name}}
+            </h2>
+            <div class="buttons">
+                <a class="button" target="_blank"
+                    href={{repo.html_url}}>Repository
+                </a>
+                <a class="button" *ngIf="repo.homepage" target="_blank" href="{{repo.homepage}}">Live demo</a>
+            </div>
+            <p>{{repo.description}}</p>
+        </div>
+    </div>

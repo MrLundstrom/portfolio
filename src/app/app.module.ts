@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faFire, faSun, faMoon, faIdCard, faDatabase, faImages } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub, faAngular, faBehance, faHtml5, faJs, faSass, faCss3Alt, faGitAlt, faJava, faNpm, faReact, faUnity, faGooglePlay, faAppStore, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faAngular, faBehance, faHtml5, faJs, faSass, faCss3Alt, faGitAlt, faJava, faNpm, faReact, faUnity, faGooglePlay, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
 import { } from '@fortawesome/free-regular-svg-icons';
 import smoothscroll from 'smoothscroll-polyfill';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SplashComponent } from './components/splash/splash.component';
@@ -14,8 +15,9 @@ import { ContentComponent } from './components/content/content.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutComponent } from './components/about/about.component';
-import { TimelineComponent } from './components/timeline/timeline.component';
-import { TimelineEventComponent } from './components/timeline-event/timeline-event.component';
+import { GithubComponent } from './components/github/github.component';
+import { RepositoryCardComponent } from './components/repository-card/repository-card.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,14 @@ import { TimelineEventComponent } from './components/timeline-event/timeline-eve
     SkillsComponent,
     ProjectsComponent,
     AboutComponent,
-    TimelineComponent,
-    TimelineEventComponent
+    GithubComponent,
+    RepositoryCardComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

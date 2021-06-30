@@ -4,27 +4,58 @@
     height: 100%;
     opacity: 0.9;
     background-color: #8e8e8e12;
+    .cover_photo{
+        padding-top:56.25%;
+        width:100%;
+        height:100%;
+        background-size: cover;
+        background-position: center;
+    }
 
-    &.simul h2 {
+    &.simul {
+        .cover_photo{
+            background-image: url('../../../assets/Side.png');
+        }
+        h2 {
         padding-bottom: 0.25rem;
         border-bottom: 2px solid #750c64;
     }
+}
 
-    &.transforms h2 {
+    &.transforms {
+        .cover_photo{
+            background-image: url('../../../assets/transforms.png');
+        }
+        h2 {
         padding-bottom: 0.25rem;
         border-bottom: 2px solid #65fc47;
     }
+}
 
-    &.spex h2 {
+    &.spex {
+        .cover_photo{
+            background-image: url('../../../assets/spex.png');
+        }
+        h2 {
         padding-bottom: 0.25rem;
         border-bottom: 2px solid #fcd947;
     }
+}
 
-    &.dotClock h2 {
+    &.dotClock {
+        .cover_photo{
+            background-image: url('../../../assets/dotclock.png');
+        }
+        h2 {
         padding-bottom: 0.25rem;
         border-bottom: 2px solid rgb(255, 31, 31);
     }
-    &.continuous h2{
+}
+    &.continuous{
+        .cover_photo{
+            background-image: url('../../../assets/td.jpg');
+        }
+    } h2{
         padding-bottom: 0.25rem;
         border-bottom: 2px solid rgb(8, 29, 133);
     }

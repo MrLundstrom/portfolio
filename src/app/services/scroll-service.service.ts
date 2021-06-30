@@ -9,6 +9,7 @@ export class ScrollServiceService {
   public projects = new Subject();
   public splash = new Subject();
   public about = new Subject();
+  public repositories = new Subject();
 
   constructor() { }
 
@@ -19,8 +20,10 @@ export class ScrollServiceService {
       this.projects.next();
     } else if (page == 'splash') {
       this.splash.next();
-    } else {
+    } else if (page == 'about'){
       this.about.next();
+    } else{
+      this.repositories.next();
     }
   }
 }
