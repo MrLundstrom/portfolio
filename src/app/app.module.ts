@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faFire, faSun, faMoon, faIdCard, faDatabase, faImages } from '@fortawesome/free-solid-svg-icons';
+import { faFire, faSun, faMoon, faIdCard, faDatabase, faImages, faCube } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faAngular, faBehance, faHtml5, faJs, faSass, faCss3Alt, faGitAlt, faJava, faNpm, faReact, faUnity, faGooglePlay, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
 import { } from '@fortawesome/free-regular-svg-icons';
 import smoothscroll from 'smoothscroll-polyfill';
@@ -46,6 +46,7 @@ export class AppModule {
     library.addIcons(
       faLinkedin, faGithub, faAngular, faBehance, faHtml5, faJs, faSass, faFire, faCss3Alt,
       faGitAlt, faJava, faSun, faMoon, faIdCard, faNpm, faReact,faDatabase,faImages, faUnity,faGooglePlay,faAppStoreIos
+      , faCube
     );
     smoothscroll.polyfill();
   }

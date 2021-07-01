@@ -28,8 +28,8 @@
         color:white;
     }
     &.fire{
-        background-color: lightblue;
-        color:orangered;
+        background-color: rgb(182, 225, 240);
+        color:rgb(241, 67, 3);
     }
     &.git{
         background-color: white;
@@ -57,6 +57,10 @@
     }
     &.unity{
         background-color: #dddddd;
+        color:black;
+    }
+    &.threed{
+        background-color: #e95b19;
         color:black;
     }
     
