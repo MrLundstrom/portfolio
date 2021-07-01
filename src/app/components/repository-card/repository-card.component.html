@@ -3,10 +3,10 @@
             <h2>{{repo.name}}
             </h2>
             <div class="buttons">
-                <a class="button" rel="noreferer" target="_blank"
+                <a class="button" rel="noreferrer" target="_blank"
                     href={{repo.html_url}}>Repository
                 </a>
-                <a class="button" *ngIf="repo.homepage" rel="noreferer" target="_blank" href="{{repo.homepage}}">Live demo</a>
+                <a class="button" *ngIf="repo.homepage" rel="noreferrer" target="_blank" href="{{repo.homepage}}">Live demo</a>
             </div>
             <p>{{repo.description}}</p>
             <p><b>Last Updated:</b> {{repo.updated_at}}<br>
